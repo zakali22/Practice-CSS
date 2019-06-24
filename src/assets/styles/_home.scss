@@ -1,0 +1,31 @@
+.home {
+    border: 1px solid var(--success);
+
+    &__banner {
+        height: 95vh;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        background-image: linear-gradient(to right, $light-green1, $light-green2), url("../img/hero.jpg");
+        position: relative;
+        padding: 4rem 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--logo {
+            align-self: flex-start;
+            img {
+                width: 10rem;
+            }
+        }
+        &--text {
+            border: 1px solid white;
+            width: 70%;
+            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        
+    }
+}
